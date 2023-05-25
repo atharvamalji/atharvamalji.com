@@ -1,6 +1,19 @@
 import { FaPython, FaJava } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiCsharp, SiCplusplus, SiDjango, SiReact, SiLaravel, SiExpress, SiSelenium, SiAmazonaws, SiHeroku, SiPostgresql, SiMysql } from "react-icons/si";
+import {
+  SiCsharp,
+  SiCplusplus,
+  SiDjango,
+  SiReact,
+  SiLaravel,
+  SiExpress,
+  SiSelenium,
+  SiAmazonaws,
+  SiHeroku,
+  SiPostgresql,
+  SiMysql,
+  SiDocker,
+} from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -97,6 +110,10 @@ const Skills = () => {
                 <li className="flex items-center space-x-2">
                   <SiHeroku className="text-purple-700" />
                   <span>Heroku</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <SiDocker className="text-blue-600" />
+                  <span>Docker</span>
                 </li>
               </ul>
             </div>
