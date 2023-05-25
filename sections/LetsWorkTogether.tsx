@@ -13,6 +13,10 @@ const transitionRocket = {
   },
 };
 
+const sendMail = () => {
+  window.location.href = "mailto:atharva.malji.2001@gmail.com";
+};
+
 const LetsWorkTogether = () => {
   return (
     <section className="flex justify-center py-24 p-4 bg-amber-50">
@@ -21,21 +25,6 @@ const LetsWorkTogether = () => {
           <div>
             <p className="text-5xl md:text-6xl font-[700]">
               <span>Let&apos;s work together </span>
-              {/* <motion.span
-                transition={transitionRocket}
-                animate={{ y: [100, -100] }}
-              >
-                <span>
-                  <Image
-                    src={"/icons/rocket.png"}
-                    width={64}
-                    height={64}
-                    alt={"rocket"}
-                    className={"inline w-16"}
-                  />
-                </span>
-                <div className="h-20 w-20 bg-black"></div>
-              </motion.span> */}
               <motion.div
                 animate={{ y: ["0%", "5%", "0%", "-7%", "0%"] }}
                 transition={transitionRocket}
@@ -65,7 +54,12 @@ const LetsWorkTogether = () => {
               </p>
             </div>
             <div>
-              <button className="space-x-2 flex items-center bg-amber-300 font-[700] p-4 md:text-2xl">
+              <button
+                className="space-x-2 flex items-center bg-amber-300 font-[700] p-4 md:text-2xl"
+                onClick={() => {
+                  sendMail();
+                }}
+              >
                 <p>Get in touch</p>
                 <span>
                   <GrSend />

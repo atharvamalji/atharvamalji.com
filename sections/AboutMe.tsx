@@ -22,10 +22,10 @@ const AboutMe = () => {
             </div>
             <div className="z-10">
               <p className="md:text-xl max-w-[43rem]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                officiis dolorum accusamus exercitationem, modi, aliquam eos rem
-                delectus illo eius magnam ducimus asperiores nisi inventore esse
-                odio labore vel? Animi?
+                Having worked at a cloud service startup and spending extensive
+                time in learning and practitsing modern frameworks, I am
+                confident in saying that I have the necessary experience it
+                takes to deliver in the current fast paced industry.
               </p>
             </div>
             {/* <div className="space-y-2">
@@ -68,12 +68,18 @@ const AboutMe = () => {
             </div> */}
           </div>
           <div className="flex space-x-4 md:text-2xl">
-            <button className="space-x-2 flex items-center bg-amber-300 font-[700] p-4">
-              <p>Download my résumé</p>
-              <span>
-                <FiDownload />
-              </span>
-            </button>
+            <Link
+              href={
+                "https://media.licdn.com/dms/document/media/C4D1FAQFpXC4WVHvciQ/feedshare-document-pdf-analyzed/0/1677350128615?e=1686182400&v=beta&t=w91T5t48B90FOSutsXfCS8l1s1LM-JwMzaxsU0HpJ1g"
+              }
+            >
+              <button className="space-x-2 flex items-center bg-amber-300 font-[700] p-4">
+                <p>Download my résumé</p>
+                <span>
+                  <FiDownload />
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

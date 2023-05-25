@@ -13,10 +13,8 @@ const fontPoppins = Poppins({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <AnimatePresence mode="wait" initial={false}>
-      <main className={fontPoppins.className}>
-        <Component {...pageProps} />
-      </main>
-    </AnimatePresence>
+    <main className={fontPoppins.className}>
+      <Component {...pageProps} />
+    </main>
   );
 }

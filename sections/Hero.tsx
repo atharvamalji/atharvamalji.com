@@ -13,6 +13,10 @@ import { HiBriefcase } from "react-icons/hi";
 
 import { motion } from "framer-motion";
 
+const sendMail = () => {
+  window.location.href = "mailto:atharva.malji.2001@gmail.com";
+};
+
 const Hero = () => {
   return (
     <section className="md:min-h-screen flex justify-center bg-hero-pattern bg-repeat bg-contain">
@@ -97,13 +101,18 @@ const Hero = () => {
               </ul>
             </div>
             <div className="flex space-x-4 md:text-2xl">
-              <button className="space-x-2 flex items-center bg-amber-300 font-[700] p-4">
+              <button
+                className="space-x-2 flex items-center bg-amber-300 font-[700] p-4"
+                onClick={() => {
+                  sendMail();
+                }}
+              >
                 <p>Say hello</p>
                 <span>
                   <GrSend />
                 </span>
               </button>
-              <button className="space-x-2 flex items-center text-amber-500 bg-white border border-amber-300 font-[700] p-4">
+              <button className="space-x-2 flex items-center text-amber-500 bg-white border border-amber-300 font-[700] p-4 hidden">
                 <p>See my works</p>
                 <span>
                   <HiBriefcase />
